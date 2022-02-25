@@ -62,8 +62,13 @@ int main()
                     {
                         /// TODO: SELL(enteredValue)
                     }
+                    editMode = 0;
                 }
-                enteredValue = (enteredValue * 10) + key;
+                
+                if(enteredValue < 10000)
+                {
+                    enteredValue = (enteredValue * 10) + (key - '0');
+                }
             }
             else
             {

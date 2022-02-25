@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/marosm/CLionProjects/MicroBudget/draw.c
-draw.h
-/home/marosm/CLionProjects/MicroBudget/draw.h
-
 /home/marosm/CLionProjects/MicroBudget/draw.h
 helper.h
 /home/marosm/CLionProjects/MicroBudget/helper.h

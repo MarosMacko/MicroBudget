@@ -279,5 +279,18 @@ void draw()
         pprint("#", &borderColor);
     pprint("#\n", &borderColor);
 
+    if(editMode)
+    {
+        printf("\t");
+        if(cursor.x == 0)
+        {
+            printf("BUY: %i", enteredValue);
+        }
+        else
+        {
+            printf("SELL: %i", enteredValue);
+        }
+    }
+
 
 }

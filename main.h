@@ -62,5 +62,6 @@ extern struct cursor
 } cursor;
 
 extern int editMode;
+extern int enteredValue;
 
 #endif //TETRIS_MAIN_H
