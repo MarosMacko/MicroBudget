@@ -16,6 +16,7 @@ extern struct instrument
     int directionChange;
     int riskLevel;
     int volatility;
+	float lastChange;
 } instrument;
 
 extern struct state

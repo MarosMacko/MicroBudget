@@ -16,6 +16,7 @@ struct state* initState()
 		instrument->len = -1;
 		instrument->held = 0;
 		instrument->directionChange = 0;
+		instrument->lastChange = 0.00;
 		state->instruments[i] = instrument;
 	}
 	
@@ -57,14 +58,14 @@ void buyInstrumentMoney(struct state* state, int index, float amount)
 {
 	int len = state->instruments[index]->len;
 	float value = state->instruments[index]->data[len];
-	buyInstruments(state, index, amount/value);
+	buyInstrument(state, index, amount/value);
 }
 
 void sellInstrumentMoney(struct state* state, int index, float amount)
 {
 	int len = state->instruments[index]->len;
 	float value = state->instruments[index]->data[len];
-	sellInstruments(state, index, amount/value);
+	sellInstrument(state, index, amount/value);
 }
 
 void sellInstrument(struct state* state, int index, float amount)
