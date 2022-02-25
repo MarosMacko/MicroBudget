@@ -33,4 +33,25 @@
 #include "eventHandler.h"
 #include "draw.h"
 
+struct app
+{
+    int consoleHeight;
+    int consoleWidth;
+    int cyclesPerFrame;
+    int targetFPS;
+    int state;
+} app;
+
+struct player
+{
+    int freeCash;
+    int netWorth;
+    int stock[5];
+} player;
+
+struct stocks
+{
+    
+} stocks;
+
 #endif //TETRIS_MAIN_H

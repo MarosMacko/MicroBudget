@@ -16,7 +16,7 @@ void exit_handler(const int sig)
     (void)system("cls");
     #endif
 
-    printf("\nTetris has exited with code %d ", sig);
+    printf("\nApplication has exited with code %d ", sig);
     switch (sig)
     {
         case 2:     printf("(SIGINT)\n"); break;
