@@ -51,9 +51,16 @@ void pprint(const char *toPrint, const char *color)
                 strcpy(cPrefix, "\x1B[33m");
                 break;
 
-            case 'w':
+            case 'u':
             case 7 :
                 strcpy(cPrefix, "\x1B[4m");
+                break;
+            case 't':
+            case 8 :
+                strcpy(cPrefix, "\x1B[97m");
+                break;
+            case 'i':
+                strcpy(cPrefix, "\x1B[47m");
                 break;
             default:
                 break;
@@ -78,7 +85,9 @@ void draw()
     static char green = 'g';
     static char red = 'r';
     static char blue = 'b';
-    static char select = 'w';
+    static char text = 't';
+    static char underline = 'u';
+    static char invert = 'i';
     static char reset = 'n';
     static const int WindowSizeX = 80;
     static const int WindowSizeY = 18;
@@ -140,16 +149,19 @@ void draw()
 
         pprint(" ", &blue);
         printf("Stock %c \t", 'A' + i);
-
         printf("Have: 0 (0$) \t");
-
         printf("Value: 420$ \t");
-
         printf("⇈5%% \t");
+
+        pprint(" ", &blue);
 
         if((cursor.x == 0) && (cursor.y == i))
         {
-            pprint("", &select);
+            pprint("", &underline);
+            if(editMode)
+            {
+                pprint("", &invert);
+            }
         }
 
         printf("BUY\t");
@@ -157,13 +169,13 @@ void draw()
 
         if((cursor.x == 1) && (cursor.y == i))
         {
-            pprint("", &select);
+            pprint("", &underline);
+            if(editMode)
+                pprint("", &invert);
         }
 
         printf("SELL\t");
         pprint("", &reset);
-
-
 
     }
 

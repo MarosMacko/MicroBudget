@@ -8,6 +8,7 @@ struct stocks stocks;
 struct cursor cursor;
 
 int editMode;
+int enteredValue = 0;
 
 
 int calculateNetWorth()
@@ -49,23 +50,43 @@ int main()
         if(kbhit())
         {
             char key = parseKey();
-            switch (key)
+            if(editMode)
             {
-                case 'w':
-                    cursor.y = (cursor.y - 1) % 5;
-                    break;
-                case 's':
-                    cursor.y = (cursor.y + 1) % 5;
-                    break;
-                case 'a':
-                    cursor.x = (cursor.x - 1) % 2;
-                    break;
-                case 'd':
-                    cursor.x = (cursor.x + 1) % 2;
-                    break;
-                case 'n':
-                    editMode = !editMode;
-                    break;
+                if(key == 'n')
+                {
+                    if(cursor.x == 0)
+                    {
+                        /// TODO: BUY(enteredValue)
+                    }
+                    if(cursor.x == 1)
+                    {
+                        /// TODO: SELL(enteredValue)
+                    }
+                }
+                enteredValue = (enteredValue * 10) + key;
+            }
+            else
+            {
+                switch (key)
+                {
+                    case 'w':
+                        cursor.y = (cursor.y - 1) % 5;
+                        if(cursor.y < 0) cursor.y = 4;
+                        break;
+                    case 's':
+                        cursor.y = (cursor.y + 1) % 5;
+                        break;
+                    case 'a':
+                        cursor.x = abs((cursor.x - 1) % 2);
+                        break;
+                    case 'd':
+                        cursor.x = (cursor.x + 1) % 2;
+                        break;
+                    case 'n':
+                        editMode = (editMode + 1) % 2;
+                        enteredValue = 0;
+                        break;
+                }
             }
         }
 
