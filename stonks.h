@@ -25,6 +25,10 @@ extern struct state
     struct instrument* instruments[NUM_INSTRUMENTS];
 } state;
 
+void setRiskLevel(struct state* state, int index, int level);
+void setVolatility(struct state* state, int index, int vol);
+void setDirection(struct state* state, int index, int direction);
+
 extern struct state* initState();
 void updateInstrument(struct state*, int, float);
 void updateInstruments(struct state*);

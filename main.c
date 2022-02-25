@@ -47,6 +47,23 @@ int main()
 
     /// STONKS INIT
     stonksState = initState();
+    for(int i = 0; i < 5; i++)
+    {
+        updateInstrument(stonksState, i, (float)(50+pcg32_boundedrand(100)));
+        setDirection(stonksState, i, ((i % 2) * 2) - 1);
+    }
+
+    setRiskLevel(stonksState, 0, CONSERVATIVE);
+    setRiskLevel(stonksState, 1, BALANCED);
+    setRiskLevel(stonksState, 2, DYNAMIC);
+    setRiskLevel(stonksState, 3, CONSERVATIVE);
+    setRiskLevel(stonksState, 4, BALANCED);
+
+    setVolatility(stonksState, 0, HIGH);
+    setVolatility(stonksState, 1, LOW);
+    setVolatility(stonksState, 2, MEDIUM);
+    setVolatility(stonksState, 3, MEDIUM);
+    setVolatility(stonksState, 4, HIGH);
 
     //GAME LOOP
     while(app.state==1 || app.state == 2 || app.state == 3)
