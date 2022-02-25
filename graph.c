@@ -120,14 +120,17 @@ void draw_graph()
         gotoXY(xOffset + i, newY);
         if(lastY < newY)
         {
+            pprint("", &green);
             printf("/");
         }
         else if(lastY == newY)
         {
+            pprint("", &reset);
             printf("-");
         }
         else
         {
+            pprint("", &red);
             printf("\\");
         }
         lastY = newY;
