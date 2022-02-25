@@ -74,7 +74,52 @@ void draw_graph()
         pprint("##", &borderColor);//end of row
     }
 
-    printf("GRAPH");
+    pprint("", &reset);
+
+    float min = 1e10;
+    float max = 0;
+    unsigned long dataLen = state.instruments[cursor.y]->len;
+    uint32_t windowLen = WindowSizeX;
+    if(windowLen > dataLen) windowLen = dataLen;
+
+    for(int i = 0; i < windowLen; i++)
+    {
+        if(state.instruments[cursor.y]->data[dataLen-i] > max)
+        {
+            max = state.instruments[cursor.y]->data[dataLen-i];
+        }
+        if(state.instruments[cursor.y]->data[dataLen-i] < min)
+        {
+            min = state.instruments[cursor.y]->data[dataLen-i];
+        }
+    }
+
+    /// Scale
+    gotoXY(xOffset - 10, yOffset);
+    printf("%f6.1", max);
+
+    gotoXY(xOffset - 10, yOffset + WindowSizeY / 2);
+    printf("%f6.1", (max+min)/2);
+
+    gotoXY(xOffset - 10, yOffset + WindowSizeY);
+    printf("%f6.1", min);
+
+    //OldRange = (OldMax - OldMin)
+    int oldRange = max - min;
+    //NewRange = (NewMax - NewMin)
+    int newRange = WindowSizeY;
+    //NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin
+
+    for(int i = 0; i < windowLen; i++)
+    {
+        int oldy = state.instruments[cursor.y]->data[dataLen-(windowLen-i)];
+        int newy = (((oldy - min) * newRange) / oldRange) + 0;
+        newy = WindowSizeY - newy; // invert, cuz Y=0 is up
+
+        gotoXY(xOffset + i, newy);
+        printf("*");
+    }
+
 
 
     //endl

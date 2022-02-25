@@ -20,6 +20,7 @@ int calculateNetWorth()
 
 int main()
 {
+
     signal(SIGINT, exit_handler);
     app.consoleHeight = getConsoleHeight();
     app.consoleWidth  = getConsoleWidth();

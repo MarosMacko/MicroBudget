@@ -8,6 +8,7 @@
 #include "helper.h"
 #include "main.h"
 #include "draw.h"
+#include "stonks.h"
 
 void draw_graph();
 

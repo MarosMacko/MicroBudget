@@ -23,6 +23,7 @@ extern struct state
     float balance;
     struct instrument* instruments[NUM_INSTRUMENTS];
 } state;
+
 extern struct state* initState();
 void updateInstrument(struct state*, int, float);
 void updateInstruments(struct state*);
