@@ -1,4 +1,5 @@
 #include "main.h"
+#include "draw_otazky.h"
 
 unsigned long long t_now=0, t_lastRender=0, t_lastStonks=0;
 
@@ -10,7 +11,9 @@ struct state* stonksState;
 
 int editMode;
 int enteredValue = 0;
+int question = 0;
 
+struct Otazka otazka[10];
 
 int calculateNetWorth()
 {
@@ -107,8 +110,10 @@ int main()
                             app.state = 3;
                         }
                         else if(app.state == 2){
-                            //if (cursor.y == otazky[question].result)
-                              //  app.state = 1;
+                            if (cursor.y == otazky[question].correct)
+                                question++;
+                            if (question>3)
+                                app.state = 1;
                         }
                         else
                         {
