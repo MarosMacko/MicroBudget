@@ -6,6 +6,7 @@ struct instrument
 	float data[50000];
 	int held;
 	int direction;
+	int directionChange;
 	int riskLevel;
 	int volatility;
 };
@@ -15,12 +16,6 @@ struct state
 	float balance;
 	struct instrument* instruments[NUM_INSTRUMENTS];
 };
-
-int getPrice()
-{
-	static int x = 0;
-	return (x++)%3;
-}
 
 struct state* initState()
 {
@@ -32,6 +27,7 @@ struct state* initState()
 		struct instrument* instrument = malloc(sizeof(struct instrument));
 		instrument->len = -1;
 		instrument->held = 0;
+		instrument->directionChange = 0;
 		state->instruments[i] = instrument;
 	}
 	
@@ -99,14 +95,16 @@ float portfolioValue(struct state* state)
 int main()
 {
 	struct state* state = initState();
-	updateInstrument(state, 3, 52.56);
-	printf("%f\n", state->instruments[3]->data[0]);
-	buyInstrument(state, 3, 4);
-	sellInstrument(state, 3, 2);
-	updateInstrument(state, 3, 62.56);
-	printf("%f\n", state->instruments[3]->data[0]);
-	printf("%d\n", state->instruments[3]->held);
-	printf("%f\n", state->balance);
-	printf("%f\n", portfolioValue(state));
+	updateInstrument(state, 3, 60);
+	setRiskLevel(state, 3, DYNAMIC);
+	setVolatility(state, 3, MEDIUM);
+	setDirection(state, 3, UP);
+	int i;
+	for(i = 0; i < 100; i++)
+	{
+		float newPrice = generateNewPrice(state->instruments[3]);
+		updateInstrument(state, 3, newPrice);
+		printf("%f\n", newPrice);
+	}
 	return 0;
 }

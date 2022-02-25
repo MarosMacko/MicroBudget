@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "price_gen.h"
 #define NUM_INSTRUMENTS 5
 #define INIT_BALANCE 1000
 
