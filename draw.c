@@ -244,9 +244,11 @@ void draw()
 
         pprint(" ", &blue);
         printf("Stock %c \t", 'A' + i);
-        printf("Have: 0 (0$) \t");
-        printf("Value: 420$ \t");
-        printf("⇈5%% \t");
+        printf("Have: %4.1f (%4.1f CZK) \t", stonksState->instruments[i]->held, stonksState->instruments[i]->data[stonksState->instruments[i]->len] * stonksState->instruments[i]->held);
+        printf("Value: %4.1f CZK \t", stonksState->instruments[i]->data[stonksState->instruments[i]->len]);
+		if(stonksState->instruments[i]->lastChange > 0) pprint("", &green);
+		else pprint("", &red);
+        printf("%2.1f%% \t", stonksState->instruments[i]->lastChange * 100);
 
         pprint(" ", &reset);
 
