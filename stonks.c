@@ -80,6 +80,16 @@ float portfolioValue(struct state* state)
 	return total;
 }
 
+void updateInstruments(struct state* state)
+{
+	int i;
+	for(i = 0; i < NUM_INSTRUMENTS; i++)
+	{
+		float price = generateNewPrice(state->instruments[i]);
+		updateInstrument(state, i, price);
+	}
+}
+
 int maina()
 {
 	struct state* state = initState();

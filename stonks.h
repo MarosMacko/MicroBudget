@@ -11,7 +11,7 @@ extern struct instrument
 {
     int len;
     float data[50000];
-    int held;
+    float held;
     int direction;
     int directionChange;
     int riskLevel;
@@ -25,6 +25,7 @@ extern struct state
 } state;
 extern struct state* initState();
 void updateInstrument(struct state*, int, float);
+void updateInstruments(struct state*);
 void sellInstrument(struct state*, int, int);
 void buyInstrument(struct state*, int, int);
 float portfolioValue(struct state*);
