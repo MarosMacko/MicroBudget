@@ -5,7 +5,7 @@
 
 #if defined(__linux__)
 static struct termios termios_old, termios_new;
-static bool initialized = false, wasRun = false;
+static int initialized = 0, wasRun = 0;
 
 int kbhit(void)
 {
@@ -18,8 +18,8 @@ int kbhit(void)
         tcgetattr(STDIN, &term);
         term.c_lflag &= ~ICANON;
         tcsetattr(STDIN, TCSANOW, &term);
-        setbuf(stdin, NULL);
-        initialized = true;
+        setbuf(stdin, 0);
+        initialized = 1;
     }
 
     int bytesWaiting;
@@ -47,8 +47,8 @@ void initTermios(int echo)
 inline void exitTermios(void)
 {
     tcsetattr(0, TCSANOW, &termios_old);
-    initialized=false;
-    wasRun=false;
+    initialized=0;
+    wasRun=0;
 }
 
 inline char getch(void)

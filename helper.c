@@ -17,6 +17,7 @@ inline void gotoXY(const int x, const int y)
 #endif
 }
 
+
 inline void clearScreen(void)
 {
 #if defined(__linux__)

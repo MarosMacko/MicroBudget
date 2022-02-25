@@ -15,7 +15,6 @@
 #include <termios.h>
 //#include <stropts.h>
 #include <time.h>
-#include <stdbool.h>
 
 /**
  * @return Keyboard hit (bool)
