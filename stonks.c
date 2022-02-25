@@ -62,6 +62,22 @@ void sellInstrument(struct state* state, int index, int amount)
 	return;
 }
 
+float portfolioValue(struct state* state)
+{
+	float total = state->balance;
+	int i;
+	for(i = 0; i < NUM_INSTRUMENTS; i++)
+	{
+		int amount = state->instruments[i]->held;
+		int index = state->instruments[i]->len;
+		if(index == -1) continue;
+		float price = state->instruments[i]->data[index];
+		total += price * amount;
+	}
+	
+	return total;
+}
+
 int main()
 {
 	struct state* state = initState();
@@ -69,8 +85,10 @@ int main()
 	printf("%f\n", state->instruments[3]->data[0]);
 	buyInstrument(state, 3, 4);
 	sellInstrument(state, 3, 2);
+	updateInstrument(state, 3, 62.56);
 	printf("%f\n", state->instruments[3]->data[0]);
 	printf("%d\n", state->instruments[3]->held);
 	printf("%f\n", state->balance);
+	printf("%f\n", portfolioValue(state));
 	return 0;
 }
