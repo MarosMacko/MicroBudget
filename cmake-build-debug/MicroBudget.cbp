@@ -118,6 +118,12 @@
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/pcg_basic.h">
 			<Option target="MicroBudget"/>
 		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/stonks.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/stonks.h">
+			<Option target="MicroBudget"/>
+		</Unit>
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

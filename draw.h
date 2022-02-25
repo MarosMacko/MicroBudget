@@ -6,6 +6,7 @@
 #define MICROBUDGET_DRAW_H
 
 #include "helper.h"
+#include "main.h"
 
 void draw();
 

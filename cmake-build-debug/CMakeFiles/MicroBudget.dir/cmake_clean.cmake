@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MicroBudget.dir/linuxSpecific.c.o"
   "CMakeFiles/MicroBudget.dir/main.c.o"
   "CMakeFiles/MicroBudget.dir/pcg_basic.c.o"
+  "CMakeFiles/MicroBudget.dir/stonks.c.o"
   "MicroBudget"
   "MicroBudget.pdb"
 )

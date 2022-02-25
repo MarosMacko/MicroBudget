@@ -53,7 +53,7 @@ void pprint(const char *toPrint, const char *color)
 
             case 'w':
             case 7 :
-                strcpy(cPrefix, "\x1B[37m");
+                strcpy(cPrefix, "\x1B[4m");
                 break;
             default:
                 break;
@@ -77,6 +77,9 @@ void draw()
     static char borderColor = 'c';
     static char green = 'g';
     static char red = 'r';
+    static char blue = 'b';
+    static char select = 'w';
+    static char reset = 'n';
     static const int WindowSizeX = 80;
     static const int WindowSizeY = 18;
 
@@ -131,8 +134,39 @@ void draw()
         pprint("##", &borderColor);//end of row
     }
 
-    gotoXY(xOffset, yOffset);
-    pprint("test", &red);
+    for(int i = 0; i < 5; i ++)
+    {
+        gotoXY(xOffset, yOffset + (i*2) + 1);
+
+        pprint(" ", &blue);
+        printf("Stock %c \t", 'A' + i);
+
+        printf("Have: 0 (0$) \t");
+
+        printf("Value: 420$ \t");
+
+        printf("⇈5%% \t");
+
+        if((cursor.x == 0) && (cursor.y == i))
+        {
+            pprint("", &select);
+        }
+
+        printf("BUY\t");
+        pprint("", &reset);
+
+        if((cursor.x == 1) && (cursor.y == i))
+        {
+            pprint("", &select);
+        }
+
+        printf("SELL\t");
+        pprint("", &reset);
+
+
+
+    }
+
 
     //endl
     gotoXY(X, Y);

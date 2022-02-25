@@ -9,7 +9,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 #include <signal.h>
 #include <math.h>
 #include <time.h>
@@ -32,8 +31,9 @@
 #include "helper.h"
 #include "eventHandler.h"
 #include "draw.h"
+#include "stonks.h"
 
-struct app
+extern struct app
 {
     int consoleHeight;
     int consoleWidth;
@@ -42,16 +42,25 @@ struct app
     int state;
 } app;
 
-struct player
+extern struct player
 {
     int freeCash;
     int netWorth;
     int stock[5];
 } player;
 
-struct stocks
+extern struct stocks
 {
-    
+
 } stocks;
+
+
+extern struct cursor
+{
+    int x;
+    int y;
+} cursor;
+
+extern int editMode;
 
 #endif //TETRIS_MAIN_H

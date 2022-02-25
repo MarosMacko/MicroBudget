@@ -3,8 +3,12 @@
 
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.c
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../helper.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../linuxSpecific.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../main.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../stonks.h
 
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.c
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.h
@@ -25,7 +29,11 @@ CMakeFiles/MicroBudget.dir/main.c.o: ../linuxSpecific.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../main.c
 CMakeFiles/MicroBudget.dir/main.c.o: ../main.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/main.c.o: ../stonks.h
 
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: ../pcg_basic.c
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: ../pcg_basic.h
+
+CMakeFiles/MicroBudget.dir/stonks.c.o: ../stonks.c
+CMakeFiles/MicroBudget.dir/stonks.c.o: ../stonks.h
 

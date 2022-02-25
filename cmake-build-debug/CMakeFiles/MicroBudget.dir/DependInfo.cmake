@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/marosm/CLionProjects/MicroBudget/linuxSpecific.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/linuxSpecific.c.o"
   "/home/marosm/CLionProjects/MicroBudget/main.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/main.c.o"
   "/home/marosm/CLionProjects/MicroBudget/pcg_basic.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/pcg_basic.c.o"
+  "/home/marosm/CLionProjects/MicroBudget/stonks.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/stonks.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -304,6 +304,33 @@ pcg_basic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/pcg_basic.c.s
 .PHONY : pcg_basic.c.s
 
+stonks.o: stonks.c.o
+
+.PHONY : stonks.o
+
+# target to build an object file
+stonks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/stonks.c.o
+.PHONY : stonks.c.o
+
+stonks.i: stonks.c.i
+
+.PHONY : stonks.i
+
+# target to preprocess a source file
+stonks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/stonks.c.i
+.PHONY : stonks.c.i
+
+stonks.s: stonks.c.s
+
+.PHONY : stonks.s
+
+# target to generate assembly for a file
+stonks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/stonks.c.s
+.PHONY : stonks.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -331,6 +358,9 @@ help:
 	@echo "... pcg_basic.o"
 	@echo "... pcg_basic.i"
 	@echo "... pcg_basic.s"
+	@echo "... stonks.o"
+	@echo "... stonks.i"
+	@echo "... stonks.s"
 .PHONY : help
 
 
