@@ -27,7 +27,7 @@ struct state* initState()
 	for(i = 0; i < NUM_INSTRUMENTS; i++)
 	{
 		struct instrument* instrument = malloc(sizeof(struct instrument));
-		instrument->len = 0;
+		instrument->len = -1;
 		instrument->held = 0;
 		state->instruments[i] = instrument;
 	}
@@ -35,12 +35,31 @@ struct state* initState()
 	return state;
 }
 
-struct state* updateInstrument(struct state* state, int index, float price)
+void updateInstrument(struct state* state, int index, float price)
 {
+	state->instruments[index]->len++;
 	int currentLen = state->instruments[index]->len;
 	state->instruments[index]->data[currentLen] = price;
-	state->instruments[index]->len++;
-	return state;
+}
+
+void buyInstrument(struct state* state, int index, int amount)
+{
+	int currentLen = state->instruments[index]->len;
+	float price = state->instruments[index]->data[currentLen] * amount;
+	if(price > state->balance) return; //not enough money
+	state->instruments[index]->held += amount;
+	state->balance -= price;
+}
+
+void sellInstrument(struct state* state, int index, int amount)
+{
+	int held = state->instruments[index]->held;
+	if(amount > held) return; //cant sell that much
+	int currentLen = state->instruments[index]->len;
+	float price = state->instruments[index]->data[currentLen] * amount;
+	state->instruments[index]->held -= amount;
+	state->balance += price;
+	return;
 }
 
 int main()
@@ -48,5 +67,10 @@ int main()
 	struct state* state = initState();
 	updateInstrument(state, 3, 52.56);
 	printf("%f\n", state->instruments[3]->data[0]);
+	buyInstrument(state, 3, 4);
+	sellInstrument(state, 3, 2);
+	printf("%f\n", state->instruments[3]->data[0]);
+	printf("%d\n", state->instruments[3]->held);
+	printf("%f\n", state->balance);
 	return 0;
 }
