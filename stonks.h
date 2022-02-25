@@ -28,6 +28,8 @@ void updateInstrument(struct state*, int, float);
 void updateInstruments(struct state*);
 void sellInstrument(struct state*, int, float);
 void buyInstrument(struct state*, int, float);
+void buyInstrumentMoney(struct state* state, int index, float amount);
+void sellInstrumentMoney(struct state* state, int index, float amount);
 float portfolioValue(struct state*);
 
 #endif
