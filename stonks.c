@@ -5,6 +5,9 @@ struct instrument
 	int len;
 	float data[50000];
 	int held;
+	int direction;
+	int riskLevel;
+	int volatility;
 };
 
 struct state
@@ -33,6 +36,21 @@ struct state* initState()
 	}
 	
 	return state;
+}
+
+void setRiskLevel(struct state* state, int index, int level)
+{
+	state->instruments[index]->riskLevel = level;
+}
+
+void setVolatility(struct state* state, int index, int vol)
+{
+	state->instruments[index]->volatility = vol;
+}
+
+void setDirection(struct state* state, int index, int direction)
+{
+	state->instruments[index]->direction = direction;
 }
 
 void updateInstrument(struct state* state, int index, float price)
