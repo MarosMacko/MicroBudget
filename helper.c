@@ -45,6 +45,8 @@ char parseKey()
             return 'd';
         case 'D': //arrow left
             return 'a';
+        case 10: //enter
+            return 'n';
         default:
             return c;
     }

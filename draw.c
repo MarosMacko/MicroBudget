@@ -51,9 +51,16 @@ void pprint(const char *toPrint, const char *color)
                 strcpy(cPrefix, "\x1B[33m");
                 break;
 
-            case 'w':
+            case 'u':
             case 7 :
-                strcpy(cPrefix, "\x1B[37m");
+                strcpy(cPrefix, "\x1B[4m");
+                break;
+            case 't':
+            case 8 :
+                strcpy(cPrefix, "\x1B[97m");
+                break;
+            case 'i':
+                strcpy(cPrefix, "\x1B[47m");
                 break;
             default:
                 break;
@@ -66,9 +73,7 @@ void pprint(const char *toPrint, const char *color)
 
 }
 
-
-void draw()
-{
+void draw_quest(){
     static unsigned long frame = 0;
     static unsigned frames=0;
     static double fps=0;
@@ -77,6 +82,11 @@ void draw()
     static char borderColor = 'c';
     static char green = 'g';
     static char red = 'r';
+    static char blue = 'b';
+    static char text = 't';
+    static char underline = 'u';
+    static char invert = 'i';
+    static char reset = 'n';
     static const int WindowSizeX = 80;
     static const int WindowSizeY = 18;
 
@@ -131,8 +141,129 @@ void draw()
         pprint("##", &borderColor);//end of row
     }
 
-    gotoXY(xOffset, yOffset);
-    pprint("test", &red);
+    
+
+    //endl
+    gotoXY(X, Y);
+    pprint("##", &borderColor);
+    for (short i=0; i < WindowSizeX; i++)
+        pprint("#", &borderColor);
+    pprint("##\n", &borderColor);
+
+    //doubled end
+    gotoXY(X, Y + 1);
+    pprint("#", &borderColor);
+    for (short i=0; i < (WindowSizeX + 2); i++)
+        pprint("#", &borderColor);
+    pprint("#\n", &borderColor);
+
+}
+
+void draw()
+{
+    static unsigned long frame = 0;
+    static unsigned frames=0;
+    static double fps=0;
+    static unsigned long long lastDraw_us=0, now_us=0;
+
+    static char borderColor = 'c';
+    static char green = 'g';
+    static char red = 'r';
+    static char blue = 'b';
+    static char text = 't';
+    static char underline = 'u';
+    static char invert = 'i';
+    static char reset = 'n';
+    static const int WindowSizeX = 80;
+    static const int WindowSizeY = 18;
+
+    int X = ((getConsoleWidth() - WindowSizeX) / 2);
+    int Y = ((getConsoleHeight() - WindowSizeY) / 2) + 1;
+
+    const int xOffset = ((getConsoleWidth() - WindowSizeX) / 2) + 2;
+    const int yOffset = ((getConsoleHeight() - WindowSizeY) / 2) + 1;
+
+    ///FPS measureC
+    long long old_now = now_us;
+    usElapsed(&now_us);
+    if (now_us > lastDraw_us+10)
+    {
+        fps = (double)frames*1000000 / (double)(now_us-lastDraw_us);
+        frames = 0;
+        lastDraw_us = now_us;
+    }
+    frames++;
+    clearScreen();
+
+    gotoXY(0, 0);
+    printf("%3.1f FPS %5.2fms       ", fps, (now_us-old_now)/1000.0);
+
+    //firstline
+    gotoXY(X, Y - 2);
+    pprint("#", &borderColor);
+    for (short i=0; i < WindowSizeX + 2; i++)
+        pprint("#", &borderColor);
+    pprint("#", &borderColor);
+
+    //doubled firstline
+    gotoXY(X, Y - 1);
+    pprint("##", &borderColor);
+    for (short i=0; i < WindowSizeX; i++)
+        pprint("#", &borderColor);
+    pprint("##", &borderColor);
+
+    ///BOARD
+    for (short i=0; i < WindowSizeY; i++)
+    {
+        gotoXY(X, Y++);
+        pprint("##", &borderColor);
+
+        for (short j=0; j < WindowSizeX; j++)
+        {
+            //pprint(board[i/g->scaling][j/(g->scaling*2)]==' ' ? " " : "█" , &board[i/g->scaling][j/(g->scaling*2)]);
+            //pprint("█", &green);
+        }
+
+        gotoXY(getConsoleWidth() - ((getConsoleWidth() - WindowSizeX) / 2), i + 1 + ((getConsoleHeight() - WindowSizeY)/2));
+        pprint("##", &borderColor);//end of row
+    }
+
+    for(int i = 0; i < 5; i ++)
+    {
+        gotoXY(xOffset, yOffset + (i*2) + 1);
+
+        pprint(" ", &blue);
+        printf("Stock %c \t", 'A' + i);
+        printf("Have: 0 (0$) \t");
+        printf("Value: 420$ \t");
+        printf("⇈5%% \t");
+
+        pprint(" ", &blue);
+
+        if((cursor.x == 0) && (cursor.y == i))
+        {
+            pprint("", &underline);
+            if(editMode)
+            {
+                pprint("", &invert);
+            }
+        }
+
+        printf("BUY\t");
+        pprint("", &reset);
+
+        if((cursor.x == 1) && (cursor.y == i))
+        {
+            pprint("", &underline);
+            if(editMode)
+                pprint("", &invert);
+        }
+
+        printf("SELL\t");
+        pprint("", &reset);
+
+    }
+
 
     //endl
     gotoXY(X, Y);

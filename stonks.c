@@ -92,7 +92,7 @@ float portfolioValue(struct state* state)
 	return total;
 }
 
-int main()
+int maina()
 {
 	struct state* state = initState();
 	updateInstrument(state, 3, 60);

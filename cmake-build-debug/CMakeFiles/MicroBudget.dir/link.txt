@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/MicroBudget.dir/draw.c.o CMakeFiles/MicroBudget.dir/eventHandler.c.o CMakeFiles/MicroBudget.dir/helper.c.o CMakeFiles/MicroBudget.dir/linuxSpecific.c.o CMakeFiles/MicroBudget.dir/main.c.o CMakeFiles/MicroBudget.dir/pcg_basic.c.o -o MicroBudget 
+/usr/bin/cc -g CMakeFiles/MicroBudget.dir/draw.c.o CMakeFiles/MicroBudget.dir/eventHandler.c.o CMakeFiles/MicroBudget.dir/helper.c.o CMakeFiles/MicroBudget.dir/linuxSpecific.c.o CMakeFiles/MicroBudget.dir/main.c.o CMakeFiles/MicroBudget.dir/pcg_basic.c.o CMakeFiles/MicroBudget.dir/stonks.c.o -o MicroBudget 
