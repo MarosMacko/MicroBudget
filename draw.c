@@ -198,7 +198,7 @@ void draw()
     }
     frames++;
     clearScreen();
-
+	pprint("", &reset);
     gotoXY(0, 0);
     printf("%3.1f FPS %5.2fms       ", fps, (now_us-old_now)/1000.0);
 
@@ -233,9 +233,9 @@ void draw()
     }
 
     gotoXY(xOffset + 1, yOffset + 1);
-    printf("Liquid assets:\t CZK %f", state.balance);
+    printf("Liquid assets:\t CZK %4.2f", state.balance);
     gotoXY(xOffset + 1, yOffset + 2);
-    printf("Portfolio value:\t CZK %f", portfolioValue(stonksState));
+    printf("Portfolio value:\t CZK %4.2f", portfolioValue(stonksState));
 
 
     for(int i = 0; i < 5; i ++)
