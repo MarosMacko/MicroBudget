@@ -1,0 +1,3 @@
+C:/Users/Matej/Desktop/microbudgett/MicroBudget/out/build/x64-Debug/CMakeFiles/MicroBudget.dir
+C:/Users/Matej/Desktop/microbudgett/MicroBudget/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Matej/Desktop/microbudgett/MicroBudget/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
