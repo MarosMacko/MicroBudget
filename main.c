@@ -79,11 +79,11 @@ int main()
                 {
                     if(cursor.x == 0)
                     {
-                        /// TODO: BUY(enteredValue)
+                        buyInstrumentMoney(stonksState, cursor.y, (float)enteredValue);
                     }
                     if(cursor.x == 1)
                     {
-                        /// TODO: SELL(enteredValue)
+                        sellInstrumentMoney(stonksState, cursor.y, (float)enteredValue);
                     }
                     editMode = 0;
                 }
@@ -152,7 +152,7 @@ int main()
                 if (app.state == 2)
                     draw_otazky();
                 /// GRAPH
-                if (app.state == 3)
+                else if (app.state == 3)
                     draw_graph();
                 else
                     draw();

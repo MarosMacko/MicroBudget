@@ -233,9 +233,9 @@ void draw()
     }
 
     gotoXY(xOffset + 1, yOffset + 1);
-    printf("Liquid assets:\t $ %i", 1000);
+    printf("Liquid assets:\t CZK %f", state.balance);
     gotoXY(xOffset + 1, yOffset + 2);
-    printf("Portfolio value:\t $ %i", 1000);
+    printf("Portfolio value:\t CZK %f", portfolioValue(stonksState));
 
 
     for(int i = 0; i < 5; i ++)

@@ -14,7 +14,7 @@
 
 
 int otazky(){
-    FILE *fp = fopen("./otazky.txt", "r");
+    FILE *fp = fopen("../otazky.txt", "r");
     if(fp == NULL){
         perror("Unable to open file!");
         exit(1);
@@ -29,12 +29,12 @@ int otazky(){
 
     fclose(fp);
     
-    for(int i =0; i<50; i+=5){
-        strcpy(otazka[i].title,data[i]);
-        strcpy(otazka[i].ans0,data[i+1]);
-        strcpy(otazka[i].ans1,data[i+2]);
-        strcpy(otazka[i].ans2,data[i+3]);
-        otazka[i].correct = atoi(data[i+4]);
+    for(int i =0; i<10; i+=1){
+        strcpy(otazka[i].title,data[i*5]);
+        strcpy(otazka[i].ans0,data[i*5+1]);
+        strcpy(otazka[i].ans1,data[i*5+2]);
+        strcpy(otazka[i].ans2,data[i*5+3]);
+        otazka[i].correct = atoi(data[i*5+4]);
     }
 }
 
@@ -107,18 +107,6 @@ void draw_otazky(){
         gotoXY(getConsoleWidth() - ((getConsoleWidth() - WindowSizeX) / 2), i + 1 + ((getConsoleHeight() - WindowSizeY)/2));
         pprint("##", &borderColor);//end of row
     }
-    
-    gotoXY(xOffset+1, yOffset+1);
-    printf(otazka[question].title);
-    Y++;
-    gotoXY(X, Y++);
-    printf(otazka[question].ans0);
-    gotoXY(X, Y++);
-    printf(otazka[question].ans1);
-    gotoXY(X, Y++);
-    printf(otazka[question].ans2);
-    
-
 
     //endl
     gotoXY(X, Y);
@@ -135,5 +123,31 @@ void draw_otazky(){
     pprint("#\n", &borderColor);
 
     printf("%i", editMode);
+
+    Y = yOffset;
+    pprint("", &red);
+    gotoXY(xOffset+1, Y);
+    printf(otazka[question].title);
+    Y+=2;
+
+    pprint("", &reset);
+
+    gotoXY(xOffset+1, Y++);
+    if(cursor.y == 0)
+        pprint("", &underline);
+    printf(otazka[question].ans0);
+    pprint("", &reset);
+
+    gotoXY(xOffset+1, Y++);
+    if(cursor.y == 1)
+        pprint("", &underline);
+    printf(otazka[question].ans1);
+    pprint("", &reset);
+
+    gotoXY(xOffset+1, Y++);
+    if(cursor.y == 2)
+        pprint("", &underline);
+    printf(otazka[question].ans2);
+    pprint("", &reset);
 
 }
