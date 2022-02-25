@@ -45,7 +45,7 @@ int main()
 
 
     //GAME LOOP
-    while(app.state==1)
+    while(app.state==1 || app.state == 2)
     {
         if(kbhit())
         {
@@ -94,7 +94,10 @@ int main()
             if(t_now >= t_lastRender+(1e6/(app.targetFPS*1.0))) ///Draw :)
             {
                 /// DRAW
-                draw();
+                if (app.state == 2)
+                    draw_quest();
+                else
+                    draw();
                 t_lastRender = t_now;
                 app.cyclesPerFrame=0;
             }
