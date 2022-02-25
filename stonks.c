@@ -44,7 +44,7 @@ void updateInstrument(struct state* state, int index, float price)
 	state->instruments[index]->data[currentLen] = price;
 }
 
-void buyInstrument(struct state* state, int index, int amount)
+void buyInstrument(struct state* state, int index, float amount)
 {
 	int currentLen = state->instruments[index]->len;
 	float price = state->instruments[index]->data[currentLen] * amount;
@@ -53,9 +53,9 @@ void buyInstrument(struct state* state, int index, int amount)
 	state->balance -= price;
 }
 
-void sellInstrument(struct state* state, int index, int amount)
+void sellInstrument(struct state* state, int index, float amount)
 {
-	int held = state->instruments[index]->held;
+	float held = state->instruments[index]->held;
 	if(amount > held) return; //cant sell that much
 	int currentLen = state->instruments[index]->len;
 	float price = state->instruments[index]->data[currentLen] * amount;
@@ -70,7 +70,7 @@ float portfolioValue(struct state* state)
 	int i;
 	for(i = 0; i < NUM_INSTRUMENTS; i++)
 	{
-		int amount = state->instruments[i]->held;
+		float amount = state->instruments[i]->held;
 		int index = state->instruments[i]->len;
 		if(index == -1) continue;
 		float price = state->instruments[i]->data[index];
