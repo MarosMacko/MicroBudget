@@ -196,6 +196,33 @@ eventHandler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/eventHandler.c.s
 .PHONY : eventHandler.c.s
 
+graph.o: graph.c.o
+
+.PHONY : graph.o
+
+# target to build an object file
+graph.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/graph.c.o
+.PHONY : graph.c.o
+
+graph.i: graph.c.i
+
+.PHONY : graph.i
+
+# target to preprocess a source file
+graph.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/graph.c.i
+.PHONY : graph.c.i
+
+graph.s: graph.c.s
+
+.PHONY : graph.s
+
+# target to generate assembly for a file
+graph.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/graph.c.s
+.PHONY : graph.c.s
+
 helper.o: helper.c.o
 
 .PHONY : helper.o
@@ -304,6 +331,33 @@ pcg_basic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/pcg_basic.c.s
 .PHONY : pcg_basic.c.s
 
+price_gen.o: price_gen.c.o
+
+.PHONY : price_gen.o
+
+# target to build an object file
+price_gen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/price_gen.c.o
+.PHONY : price_gen.c.o
+
+price_gen.i: price_gen.c.i
+
+.PHONY : price_gen.i
+
+# target to preprocess a source file
+price_gen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/price_gen.c.i
+.PHONY : price_gen.c.i
+
+price_gen.s: price_gen.c.s
+
+.PHONY : price_gen.s
+
+# target to generate assembly for a file
+price_gen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/price_gen.c.s
+.PHONY : price_gen.c.s
+
 stonks.o: stonks.c.o
 
 .PHONY : stonks.o
@@ -346,6 +400,9 @@ help:
 	@echo "... eventHandler.o"
 	@echo "... eventHandler.i"
 	@echo "... eventHandler.s"
+	@echo "... graph.o"
+	@echo "... graph.i"
+	@echo "... graph.s"
 	@echo "... helper.o"
 	@echo "... helper.i"
 	@echo "... helper.s"
@@ -358,6 +415,9 @@ help:
 	@echo "... pcg_basic.o"
 	@echo "... pcg_basic.i"
 	@echo "... pcg_basic.s"
+	@echo "... price_gen.o"
+	@echo "... price_gen.i"
+	@echo "... price_gen.s"
 	@echo "... stonks.o"
 	@echo "... stonks.i"
 	@echo "... stonks.s"

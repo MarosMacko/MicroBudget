@@ -8,6 +8,7 @@
 #include "helper.h"
 #include "main.h"
 
+void pprint(const char *toPrint, const char *color);
 void draw();
 void draw_quest();
 

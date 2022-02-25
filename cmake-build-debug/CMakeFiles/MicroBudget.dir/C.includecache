@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/marosm/CLionProjects/MicroBudget/draw.c
+draw.h
+/home/marosm/CLionProjects/MicroBudget/draw.h
+
 /home/marosm/CLionProjects/MicroBudget/draw.h
 helper.h
 /home/marosm/CLionProjects/MicroBudget/helper.h
@@ -21,6 +25,18 @@ helper.h
 /home/marosm/CLionProjects/MicroBudget/helper.h
 linuxSpecific.h
 /home/marosm/CLionProjects/MicroBudget/linuxSpecific.h
+
+/home/marosm/CLionProjects/MicroBudget/graph.c
+graph.h
+/home/marosm/CLionProjects/MicroBudget/graph.h
+
+/home/marosm/CLionProjects/MicroBudget/graph.h
+helper.h
+/home/marosm/CLionProjects/MicroBudget/helper.h
+main.h
+/home/marosm/CLionProjects/MicroBudget/main.h
+draw.h
+/home/marosm/CLionProjects/MicroBudget/draw.h
 
 /home/marosm/CLionProjects/MicroBudget/helper.h
 stdbool.h
@@ -111,14 +127,34 @@ draw.h
 /home/marosm/CLionProjects/MicroBudget/draw.h
 stonks.h
 /home/marosm/CLionProjects/MicroBudget/stonks.h
+graph.h
+/home/marosm/CLionProjects/MicroBudget/graph.h
 
 /home/marosm/CLionProjects/MicroBudget/pcg_basic.h
 inttypes.h
 -
+
+/home/marosm/CLionProjects/MicroBudget/price_gen.c
+price_gen.h
+/home/marosm/CLionProjects/MicroBudget/price_gen.h
+
+/home/marosm/CLionProjects/MicroBudget/price_gen.h
+stonks.h
+/home/marosm/CLionProjects/MicroBudget/stonks.h
+stdint.h
+/home/marosm/CLionProjects/MicroBudget/stdint.h
+pcg_basic.h
+/home/marosm/CLionProjects/MicroBudget/pcg_basic.h
+
+/home/marosm/CLionProjects/MicroBudget/stonks.c
+stonks.h
+/home/marosm/CLionProjects/MicroBudget/stonks.h
 
 /home/marosm/CLionProjects/MicroBudget/stonks.h
 stdlib.h
 -
 stdio.h
 -
+price_gen.h
+/home/marosm/CLionProjects/MicroBudget/price_gen.h
 

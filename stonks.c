@@ -1,21 +1,9 @@
 #include "stonks.h"
 
-struct instrument
-{
-	int len;
-	float data[50000];
-	int held;
-	int direction;
-	int directionChange;
-	int riskLevel;
-	int volatility;
-};
+struct instrument instrument;
 
-struct state
-{
-	float balance;
-	struct instrument* instruments[NUM_INSTRUMENTS];
-};
+struct state state;
+
 
 struct state* initState()
 {

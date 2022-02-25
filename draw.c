@@ -62,6 +62,9 @@ void pprint(const char *toPrint, const char *color)
             case 'i':
                 strcpy(cPrefix, "\x1B[47m");
                 break;
+            case 'f':
+                strcpy(cPrefix, "\x1B[30m");
+                break;
             default:
                 break;
         }
@@ -172,7 +175,8 @@ void draw()
     static char blue = 'b';
     static char text = 't';
     static char underline = 'u';
-    static char invert = 'i';
+    static char invertBG = 'i';
+    static char invertFG = 'f';
     static char reset = 'n';
     static const int WindowSizeX = 80;
     static const int WindowSizeY = 18;
@@ -228,9 +232,15 @@ void draw()
         pprint("##", &borderColor);//end of row
     }
 
+    gotoXY(xOffset + 1, yOffset + 1);
+    printf("Liquid assets:\t $ %i", 1000);
+    gotoXY(xOffset + 1, yOffset + 2);
+    printf("Portfolio value:\t $ %i", 1000);
+
+
     for(int i = 0; i < 5; i ++)
     {
-        gotoXY(xOffset, yOffset + (i*2) + 1);
+        gotoXY(xOffset, yOffset + (i*2) + 4);
 
         pprint(" ", &blue);
         printf("Stock %c \t", 'A' + i);
@@ -238,28 +248,57 @@ void draw()
         printf("Value: 420$ \t");
         printf("⇈5%% \t");
 
-        pprint(" ", &blue);
+        pprint(" ", &reset);
 
         if((cursor.x == 0) && (cursor.y == i))
         {
             pprint("", &underline);
             if(editMode)
             {
-                pprint("", &invert);
+                pprint("", &invertBG);
+                pprint("", &invertFG);
+                printf("%i\t", enteredValue);
+            }
+            else
+            {
+                printf("BUY\t");
             }
         }
+        else
+        {
+            printf("BUY\t");
+        }
 
-        printf("BUY\t");
         pprint("", &reset);
 
         if((cursor.x == 1) && (cursor.y == i))
         {
             pprint("", &underline);
             if(editMode)
-                pprint("", &invert);
+            {
+                pprint("", &invertBG);
+                pprint("", &invertFG);
+                printf("%i\t", enteredValue);
+            }
+            else
+            {
+                printf("SELL\t");
+            }
+        }
+        else
+        {
+            printf("SELL\t");
         }
 
-        printf("SELL\t");
+        pprint("", &reset);
+
+
+        if((cursor.x == 2) && (cursor.y == i))
+        {
+            pprint("", &underline);
+        }
+
+        printf("GRAPH\t");
         pprint("", &reset);
 
     }
@@ -279,18 +318,6 @@ void draw()
         pprint("#", &borderColor);
     pprint("#\n", &borderColor);
 
-    if(editMode)
-    {
-        printf("\t");
-        if(cursor.x == 0)
-        {
-            printf("BUY: %i", enteredValue);
-        }
-        else
-        {
-            printf("SELL: %i", enteredValue);
-        }
-    }
-
+    printf("%i", editMode);
 
 }

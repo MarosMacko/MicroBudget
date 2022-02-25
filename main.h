@@ -32,6 +32,7 @@
 #include "eventHandler.h"
 #include "draw.h"
 #include "stonks.h"
+#include "graph.h"
 
 extern struct app
 {

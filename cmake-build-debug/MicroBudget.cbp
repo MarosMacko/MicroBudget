@@ -94,6 +94,12 @@
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/eventHandler.h">
 			<Option target="MicroBudget"/>
 		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/graph.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/graph.h">
+			<Option target="MicroBudget"/>
+		</Unit>
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/helper.c">
 			<Option target="MicroBudget"/>
 		</Unit>
@@ -116,6 +122,12 @@
 			<Option target="MicroBudget"/>
 		</Unit>
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/pcg_basic.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/price_gen.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/price_gen.h">
 			<Option target="MicroBudget"/>
 		</Unit>
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/stonks.c">

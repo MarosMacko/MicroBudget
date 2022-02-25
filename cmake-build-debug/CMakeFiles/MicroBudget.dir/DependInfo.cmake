@@ -6,10 +6,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/marosm/CLionProjects/MicroBudget/draw.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/draw.c.o"
   "/home/marosm/CLionProjects/MicroBudget/eventHandler.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/eventHandler.c.o"
+  "/home/marosm/CLionProjects/MicroBudget/graph.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/graph.c.o"
   "/home/marosm/CLionProjects/MicroBudget/helper.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/helper.c.o"
   "/home/marosm/CLionProjects/MicroBudget/linuxSpecific.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/linuxSpecific.c.o"
   "/home/marosm/CLionProjects/MicroBudget/main.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/main.c.o"
   "/home/marosm/CLionProjects/MicroBudget/pcg_basic.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/pcg_basic.c.o"
+  "/home/marosm/CLionProjects/MicroBudget/price_gen.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/price_gen.c.o"
   "/home/marosm/CLionProjects/MicroBudget/stonks.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/stonks.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

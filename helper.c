@@ -47,6 +47,8 @@ char parseKey()
             return 'a';
         case 10: //enter
             return 'n';
+        case 8: //backspace
+            return 'b';
         default:
             return c;
     }

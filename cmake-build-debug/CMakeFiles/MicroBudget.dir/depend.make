@@ -4,16 +4,29 @@
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.c
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../eventHandler.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../graph.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../helper.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../linuxSpecific.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../main.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../price_gen.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../stonks.h
 
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.c
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../helper.h
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../linuxSpecific.h
+
+CMakeFiles/MicroBudget.dir/graph.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../eventHandler.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../graph.c
+CMakeFiles/MicroBudget.dir/graph.c.o: ../graph.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../helper.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../linuxSpecific.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../main.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../price_gen.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../stonks.h
 
 CMakeFiles/MicroBudget.dir/helper.c.o: ../helper.c
 CMakeFiles/MicroBudget.dir/helper.c.o: ../helper.h
@@ -24,16 +37,25 @@ CMakeFiles/MicroBudget.dir/linuxSpecific.c.o: ../linuxSpecific.h
 
 CMakeFiles/MicroBudget.dir/main.c.o: ../draw.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../eventHandler.h
+CMakeFiles/MicroBudget.dir/main.c.o: ../graph.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../helper.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../linuxSpecific.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../main.c
 CMakeFiles/MicroBudget.dir/main.c.o: ../main.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/main.c.o: ../price_gen.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../stonks.h
 
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: ../pcg_basic.c
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: ../pcg_basic.h
 
+CMakeFiles/MicroBudget.dir/price_gen.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/price_gen.c.o: ../price_gen.c
+CMakeFiles/MicroBudget.dir/price_gen.c.o: ../price_gen.h
+CMakeFiles/MicroBudget.dir/price_gen.c.o: ../stonks.h
+
+CMakeFiles/MicroBudget.dir/stonks.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/stonks.c.o: ../price_gen.h
 CMakeFiles/MicroBudget.dir/stonks.c.o: ../stonks.c
 CMakeFiles/MicroBudget.dir/stonks.c.o: ../stonks.h
 

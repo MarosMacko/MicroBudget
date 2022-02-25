@@ -45,7 +45,7 @@ int main()
 
 
     //GAME LOOP
-    while(app.state==1 || app.state == 2)
+    while(app.state==1 || app.state == 2 || app.state == 3)
     {
         if(kbhit())
         {
@@ -64,10 +64,15 @@ int main()
                     }
                     editMode = 0;
                 }
+                else if(key == '`')
+                {
+                    enteredValue /= 10;
+                }
                 
                 if(enteredValue < 10000)
                 {
-                    enteredValue = (enteredValue * 10) + (key - '0');
+                    if((key >= '0') && (key <= '9'))
+                        enteredValue = (enteredValue * 10) + (key - '0');
                 }
             }
             else
@@ -82,14 +87,26 @@ int main()
                         cursor.y = (cursor.y + 1) % 5;
                         break;
                     case 'a':
-                        cursor.x = abs((cursor.x - 1) % 2);
+                        cursor.x = (cursor.x - 1) % 3;
+                        if(cursor.x < 0) cursor.x = 2;
                         break;
                     case 'd':
-                        cursor.x = (cursor.x + 1) % 2;
+                        cursor.x = (cursor.x + 1) % 3;
                         break;
                     case 'n':
-                        editMode = (editMode + 1) % 2;
-                        enteredValue = 0;
+                        if(app.state == 3) // graf
+                        {
+                            app.state = 1;
+                        }
+                        else if((app.state == 1) && (cursor.x == 2)) // chcem graf
+                        {
+                            app.state = 3;
+                        }
+                        else
+                        {
+                            editMode = (editMode + 1) % 2;
+                            enteredValue = 0;
+                        }
                         break;
                 }
             }
@@ -101,6 +118,9 @@ int main()
                 /// DRAW
                 if (app.state == 2)
                     draw_quest();
+                /// GRAPH
+                if (app.state == 3)
+                    draw_graph();
                 else
                     draw();
                 t_lastRender = t_now;
