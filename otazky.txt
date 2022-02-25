@@ -1,10 +1,50 @@
-Co je to dividenda?/poplatok=0/vynos vyplaceny emitentem=1/dlhodoby cenny papier=0
-Aky je pip pre akciu s cenou 14.421 EUR?/1=0/0.1=0/0.001=1	
-Ako sa nazyva rozdiel medzi cenou bid a cenou ask?/ pip=1/financna paka=0/spread=0
-Ktore instrumenty su obchodovane na Forexe?/komodit=0/akcie=0/menove pary=1
-Aky obchod by ste mali realizovat, ked ocakavate oslabenie USD voci GBP?/predaj USDGPB=0/nakup GPBUSD=1/ neurobit nic=0
-Ake pozicie je mozne otvarat pri obchodovani s CFD?/ Kratke=0/dlhe=0/kratke i dlhe=1
-Ktore instrumenty predstavuju zaklad pre CFD?/Komodity=0/akcie=0/obe=1
-Ktory instrument je obchodovany pomocou financnej paky?/Synteticke akcie=0/Akcie CFD=1/Ziaden z nich=0
-Aka je vyhoda obchodovania s akciami CFD?/Uzatvorenie pozicie je okamzite=0/ Predaj na kratko (short pozicia)=0/Obe spomenute=1
-Ktory instrument je mozne drzat bezplatne?/Synteticke akcie=1/Akcie CFD=0/Ziaden z nich=0
+Co je to dividenda?
+poplatok
+vynos vyplaceny emitentem
+dlhodoby cenny papier
+1
+Aky je pip pre akciu s cenou 14.421 EUR?
+1
+0.1
+0.001
+1	
+Ako sa nazyva rozdiel medzi cenou bid a cenou ask?
+pip
+financna paka
+spread
+0
+Ktore instrumenty su obchodovane na Forexe?
+komodit
+akcie
+menove pary
+2
+Aky obchod by ste mali realizovat, ked ocakavate oslabenie USD voci GBP?
+predaj USDGPB
+nakup GPBUSD
+neurobit nic
+1
+Ake pozicie je mozne otvarat pri obchodovani s CFD?
+Kratke
+dlhe
+kratke i dlhe
+2
+Ktore instrumenty predstavuju zaklad pre CFD?
+Komodity
+akcie
+obe
+2
+Ktory instrument je obchodovany pomocou financnej paky?
+Synteticke akcie
+Akcie CFD
+Ziaden z nich
+1
+Aka je vyhoda obchodovania s akciami CFD?
+Uzatvorenie pozicie je okamzite
+Predaj na kratko (short pozicia)
+Obe spomenute
+2
+Ktory instrument je mozne drzat bezplatne?
+Synteticke akcie
+Akcie CFD
+Ziaden z nich
+0
