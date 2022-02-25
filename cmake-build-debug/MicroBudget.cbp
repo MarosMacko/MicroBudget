@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MicroBudget"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MicroBudget">
+				<Option output="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/MicroBudget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 MicroBudget"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MicroBudget/fast">
+				<Option output="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/MicroBudget" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/marosm/CLionProjects/MicroBudget/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 MicroBudget/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/draw.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/draw.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/eventHandler.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/eventHandler.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/helper.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/helper.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/linuxSpecific.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/linuxSpecific.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/main.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/main.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/pcg_basic.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/pcg_basic.h">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
