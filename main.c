@@ -1,11 +1,12 @@
 #include "main.h"
 
-unsigned long long t_now=0, t_lastRender=0;
+unsigned long long t_now=0, t_lastRender=0, t_lastStonks=0;
 
 struct app app;
 struct player player;
 struct stocks stocks;
 struct cursor cursor;
+struct state* stonksState;
 
 int editMode;
 int enteredValue = 0;
@@ -42,8 +43,7 @@ int main()
     initTermios(0);
 
     /// STONKS INIT
-
-
+    stonksState = initState();
 
     //GAME LOOP
     while(app.state==1 || app.state == 2 || app.state == 3)
@@ -107,8 +107,8 @@ int main()
                             app.state = 3;
                         }
                         else if(app.state == 2){
-                            if (cursor.y == otazky[question].result)
-                                app.state = 1;
+                            //if (cursor.y == otazky[question].result)
+                              //  app.state = 1;
                         }
                         else
                         {
@@ -133,6 +133,11 @@ int main()
                     draw();
                 t_lastRender = t_now;
                 app.cyclesPerFrame=0;
+            }
+            if(t_now >= t_lastStonks+(1e6)) ///Draw :)
+            {
+                updateInstruments(stonksState);
+                t_lastStonks = t_now;
             }
             else app.cyclesPerFrame++;
             msDelay(1); ///Let the CPU sleep for a bit

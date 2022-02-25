@@ -65,4 +65,6 @@ extern struct cursor
 extern int editMode;
 extern int enteredValue;
 
+extern struct state* stonksState;
+
 #endif //TETRIS_MAIN_H

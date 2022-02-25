@@ -78,19 +78,19 @@ void draw_graph()
 
     float min = 1e10;
     float max = 0;
-    unsigned long dataLen = state.instruments[cursor.y]->len;
+    unsigned long dataLen = stonksState->instruments[cursor.y]->len;
     uint32_t windowLen = WindowSizeX;
     if(windowLen > dataLen) windowLen = dataLen;
 
     for(int i = 0; i < windowLen; i++)
     {
-        if(state.instruments[cursor.y]->data[dataLen-i] > max)
+        if(stonksState->instruments[cursor.y]->data[dataLen-i] > max)
         {
-            max = state.instruments[cursor.y]->data[dataLen-i];
+            max = stonksState->instruments[cursor.y]->data[dataLen-i];
         }
-        if(state.instruments[cursor.y]->data[dataLen-i] < min)
+        if(stonksState->instruments[cursor.y]->data[dataLen-i] < min)
         {
-            min = state.instruments[cursor.y]->data[dataLen-i];
+            min = stonksState->instruments[cursor.y]->data[dataLen-i];
         }
     }
 
@@ -112,12 +112,25 @@ void draw_graph()
 
     for(int i = 0; i < windowLen; i++)
     {
-        int oldy = state.instruments[cursor.y]->data[dataLen-(windowLen-i)];
-        int newy = (((oldy - min) * newRange) / oldRange) + 0;
-        newy = WindowSizeY - newy; // invert, cuz Y=0 is up
+        static int lastY = 0;
+        int oldY = stonksState->instruments[cursor.y]->data[dataLen - (windowLen - i)];
+        int newY = (((oldY - min) * newRange) / oldRange) + 0;
+        newY = WindowSizeY - newY; // invert, cuz Y=0 is up
 
-        gotoXY(xOffset + i, newy);
-        printf("*");
+        gotoXY(xOffset + i, newY);
+        if(lastY < newY)
+        {
+            printf("/");
+        }
+        else if(lastY == newY)
+        {
+            printf("-");
+        }
+        else
+        {
+            printf("\\");
+        }
+        lastY = newY;
     }
 
 
