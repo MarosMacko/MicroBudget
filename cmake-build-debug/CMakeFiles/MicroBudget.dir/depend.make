@@ -3,6 +3,7 @@
 
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.c
 CMakeFiles/MicroBudget.dir/draw.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/draw.c.o: ../draw_otazky.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../graph.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../helper.h
@@ -12,12 +13,25 @@ CMakeFiles/MicroBudget.dir/draw.c.o: ../pcg_basic.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../price_gen.h
 CMakeFiles/MicroBudget.dir/draw.c.o: ../stonks.h
 
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../draw_otazky.c
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../draw_otazky.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../eventHandler.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../graph.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../helper.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../linuxSpecific.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../main.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../pcg_basic.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../price_gen.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../stonks.h
+
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.c
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../helper.h
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../linuxSpecific.h
 
 CMakeFiles/MicroBudget.dir/graph.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/graph.c.o: ../draw_otazky.h
 CMakeFiles/MicroBudget.dir/graph.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/graph.c.o: ../graph.c
 CMakeFiles/MicroBudget.dir/graph.c.o: ../graph.h
@@ -36,6 +50,7 @@ CMakeFiles/MicroBudget.dir/linuxSpecific.c.o: ../linuxSpecific.c
 CMakeFiles/MicroBudget.dir/linuxSpecific.c.o: ../linuxSpecific.h
 
 CMakeFiles/MicroBudget.dir/main.c.o: ../draw.h
+CMakeFiles/MicroBudget.dir/main.c.o: ../draw_otazky.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../eventHandler.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../graph.h
 CMakeFiles/MicroBudget.dir/main.c.o: ../helper.h

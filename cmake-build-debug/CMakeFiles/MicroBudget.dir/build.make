@@ -89,9 +89,22 @@ CMakeFiles/MicroBudget.dir/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MicroBudget.dir/draw.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marosm/CLionProjects/MicroBudget/draw.c -o CMakeFiles/MicroBudget.dir/draw.c.s
 
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: CMakeFiles/MicroBudget.dir/flags.make
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o: ../draw_otazky.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MicroBudget.dir/draw_otazky.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/draw_otazky.c.o -c /home/marosm/CLionProjects/MicroBudget/draw_otazky.c
+
+CMakeFiles/MicroBudget.dir/draw_otazky.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MicroBudget.dir/draw_otazky.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/marosm/CLionProjects/MicroBudget/draw_otazky.c > CMakeFiles/MicroBudget.dir/draw_otazky.c.i
+
+CMakeFiles/MicroBudget.dir/draw_otazky.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MicroBudget.dir/draw_otazky.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/marosm/CLionProjects/MicroBudget/draw_otazky.c -o CMakeFiles/MicroBudget.dir/draw_otazky.c.s
+
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/eventHandler.c.o: ../eventHandler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/MicroBudget.dir/eventHandler.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MicroBudget.dir/eventHandler.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/eventHandler.c.o -c /home/marosm/CLionProjects/MicroBudget/eventHandler.c
 
 CMakeFiles/MicroBudget.dir/eventHandler.c.i: cmake_force
@@ -104,7 +117,7 @@ CMakeFiles/MicroBudget.dir/eventHandler.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/graph.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/graph.c.o: ../graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/MicroBudget.dir/graph.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MicroBudget.dir/graph.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/graph.c.o -c /home/marosm/CLionProjects/MicroBudget/graph.c
 
 CMakeFiles/MicroBudget.dir/graph.c.i: cmake_force
@@ -117,7 +130,7 @@ CMakeFiles/MicroBudget.dir/graph.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/helper.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/helper.c.o: ../helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/MicroBudget.dir/helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MicroBudget.dir/helper.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/helper.c.o -c /home/marosm/CLionProjects/MicroBudget/helper.c
 
 CMakeFiles/MicroBudget.dir/helper.c.i: cmake_force
@@ -130,7 +143,7 @@ CMakeFiles/MicroBudget.dir/helper.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/linuxSpecific.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/linuxSpecific.c.o: ../linuxSpecific.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/MicroBudget.dir/linuxSpecific.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/MicroBudget.dir/linuxSpecific.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/linuxSpecific.c.o -c /home/marosm/CLionProjects/MicroBudget/linuxSpecific.c
 
 CMakeFiles/MicroBudget.dir/linuxSpecific.c.i: cmake_force
@@ -143,7 +156,7 @@ CMakeFiles/MicroBudget.dir/linuxSpecific.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/main.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/MicroBudget.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MicroBudget.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/main.c.o -c /home/marosm/CLionProjects/MicroBudget/main.c
 
 CMakeFiles/MicroBudget.dir/main.c.i: cmake_force
@@ -156,7 +169,7 @@ CMakeFiles/MicroBudget.dir/main.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/pcg_basic.c.o: ../pcg_basic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MicroBudget.dir/pcg_basic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MicroBudget.dir/pcg_basic.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/pcg_basic.c.o -c /home/marosm/CLionProjects/MicroBudget/pcg_basic.c
 
 CMakeFiles/MicroBudget.dir/pcg_basic.c.i: cmake_force
@@ -169,7 +182,7 @@ CMakeFiles/MicroBudget.dir/pcg_basic.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/price_gen.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/price_gen.c.o: ../price_gen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MicroBudget.dir/price_gen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MicroBudget.dir/price_gen.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/price_gen.c.o -c /home/marosm/CLionProjects/MicroBudget/price_gen.c
 
 CMakeFiles/MicroBudget.dir/price_gen.c.i: cmake_force
@@ -182,7 +195,7 @@ CMakeFiles/MicroBudget.dir/price_gen.c.s: cmake_force
 
 CMakeFiles/MicroBudget.dir/stonks.c.o: CMakeFiles/MicroBudget.dir/flags.make
 CMakeFiles/MicroBudget.dir/stonks.c.o: ../stonks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MicroBudget.dir/stonks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/MicroBudget.dir/stonks.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/MicroBudget.dir/stonks.c.o -c /home/marosm/CLionProjects/MicroBudget/stonks.c
 
 CMakeFiles/MicroBudget.dir/stonks.c.i: cmake_force
@@ -196,6 +209,7 @@ CMakeFiles/MicroBudget.dir/stonks.c.s: cmake_force
 # Object files for target MicroBudget
 MicroBudget_OBJECTS = \
 "CMakeFiles/MicroBudget.dir/draw.c.o" \
+"CMakeFiles/MicroBudget.dir/draw_otazky.c.o" \
 "CMakeFiles/MicroBudget.dir/eventHandler.c.o" \
 "CMakeFiles/MicroBudget.dir/graph.c.o" \
 "CMakeFiles/MicroBudget.dir/helper.c.o" \
@@ -209,6 +223,7 @@ MicroBudget_OBJECTS = \
 MicroBudget_EXTERNAL_OBJECTS =
 
 MicroBudget: CMakeFiles/MicroBudget.dir/draw.c.o
+MicroBudget: CMakeFiles/MicroBudget.dir/draw_otazky.c.o
 MicroBudget: CMakeFiles/MicroBudget.dir/eventHandler.c.o
 MicroBudget: CMakeFiles/MicroBudget.dir/graph.c.o
 MicroBudget: CMakeFiles/MicroBudget.dir/helper.c.o
@@ -219,7 +234,7 @@ MicroBudget: CMakeFiles/MicroBudget.dir/price_gen.c.o
 MicroBudget: CMakeFiles/MicroBudget.dir/stonks.c.o
 MicroBudget: CMakeFiles/MicroBudget.dir/build.make
 MicroBudget: CMakeFiles/MicroBudget.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable MicroBudget"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable MicroBudget"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MicroBudget.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

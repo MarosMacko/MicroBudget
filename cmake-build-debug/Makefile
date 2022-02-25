@@ -169,6 +169,33 @@ draw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/draw.c.s
 .PHONY : draw.c.s
 
+draw_otazky.o: draw_otazky.c.o
+
+.PHONY : draw_otazky.o
+
+# target to build an object file
+draw_otazky.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/draw_otazky.c.o
+.PHONY : draw_otazky.c.o
+
+draw_otazky.i: draw_otazky.c.i
+
+.PHONY : draw_otazky.i
+
+# target to preprocess a source file
+draw_otazky.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/draw_otazky.c.i
+.PHONY : draw_otazky.c.i
+
+draw_otazky.s: draw_otazky.c.s
+
+.PHONY : draw_otazky.s
+
+# target to generate assembly for a file
+draw_otazky.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MicroBudget.dir/build.make CMakeFiles/MicroBudget.dir/draw_otazky.c.s
+.PHONY : draw_otazky.c.s
+
 eventHandler.o: eventHandler.c.o
 
 .PHONY : eventHandler.o
@@ -397,6 +424,9 @@ help:
 	@echo "... draw.o"
 	@echo "... draw.i"
 	@echo "... draw.s"
+	@echo "... draw_otazky.o"
+	@echo "... draw_otazky.i"
+	@echo "... draw_otazky.s"
 	@echo "... eventHandler.o"
 	@echo "... eventHandler.i"
 	@echo "... eventHandler.s"

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/marosm/CLionProjects/MicroBudget/draw.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/draw.c.o"
+  "/home/marosm/CLionProjects/MicroBudget/draw_otazky.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/draw_otazky.c.o"
   "/home/marosm/CLionProjects/MicroBudget/eventHandler.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/eventHandler.c.o"
   "/home/marosm/CLionProjects/MicroBudget/graph.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/graph.c.o"
   "/home/marosm/CLionProjects/MicroBudget/helper.c" "/home/marosm/CLionProjects/MicroBudget/cmake-build-debug/CMakeFiles/MicroBudget.dir/helper.c.o"

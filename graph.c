@@ -81,6 +81,7 @@ void draw_graph()
     unsigned long dataLen = stonksState->instruments[cursor.y]->len;
     uint32_t windowLen = WindowSizeX;
     if(windowLen > dataLen) windowLen = dataLen;
+    if(dataLen < 3) return;
 
     for(int i = 0; i < windowLen; i++)
     {
@@ -96,13 +97,13 @@ void draw_graph()
 
     /// Scale
     gotoXY(xOffset - 10, yOffset);
-    printf("%f6.1", max);
+    printf("%4.1f CZK", max);
 
     gotoXY(xOffset - 10, yOffset + WindowSizeY / 2);
-    printf("%f6.1", (max+min)/2);
+    printf("%4.1f CZK", (max+min)/2);
 
     gotoXY(xOffset - 10, yOffset + WindowSizeY);
-    printf("%f6.1", min);
+    printf("%4.1f CZK", min);
 
     //OldRange = (OldMax - OldMin)
     int oldRange = max - min;
@@ -117,8 +118,8 @@ void draw_graph()
         int newY = (((oldY - min) * newRange) / oldRange) + 0;
         newY = WindowSizeY - newY; // invert, cuz Y=0 is up
 
-        gotoXY(xOffset + i, newY);
-        if(lastY < newY)
+        gotoXY(xOffset + i, newY + yOffset);
+        if(lastY > newY)
         {
             pprint("", &green);
             printf("/");

@@ -6,8 +6,8 @@ float generateNewPrice(struct instrument* instrument)
 	float currentPrice = instrument->data[index];
 	generateNewDirection(instrument);
 	
-	float maxDelta = 0.01 * instrument->riskLevel;
-	float deltaPercent = pcg32_random() / UINT32_MAX * maxDelta * instrument->direction;
+	float maxDelta = 0.01f * instrument->riskLevel;
+	float deltaPercent = (float)pcg32_random() / (float)UINT32_MAX * maxDelta * (float)instrument->direction;
 	instrument->lastChange = deltaPercent;
 	return currentPrice + deltaPercent * currentPrice;
 }
@@ -34,7 +34,7 @@ void generateNewDirection(struct instrument* instrument)
 		degree = 3;
 	}
 	
-	int denominator = degree - instrument->directionChange + 1;
+	int denominator = degree - interval + 1;
 	if(pcg32_random()%denominator == 0) //change direction
 	{
 		instrument->directionChange = 1;

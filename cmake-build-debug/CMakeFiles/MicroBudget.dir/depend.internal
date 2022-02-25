@@ -4,6 +4,19 @@
 CMakeFiles/MicroBudget.dir/draw.c.o
  /home/marosm/CLionProjects/MicroBudget/draw.c
  /home/marosm/CLionProjects/MicroBudget/draw.h
+ /home/marosm/CLionProjects/MicroBudget/draw_otazky.h
+ /home/marosm/CLionProjects/MicroBudget/eventHandler.h
+ /home/marosm/CLionProjects/MicroBudget/graph.h
+ /home/marosm/CLionProjects/MicroBudget/helper.h
+ /home/marosm/CLionProjects/MicroBudget/linuxSpecific.h
+ /home/marosm/CLionProjects/MicroBudget/main.h
+ /home/marosm/CLionProjects/MicroBudget/pcg_basic.h
+ /home/marosm/CLionProjects/MicroBudget/price_gen.h
+ /home/marosm/CLionProjects/MicroBudget/stonks.h
+CMakeFiles/MicroBudget.dir/draw_otazky.c.o
+ /home/marosm/CLionProjects/MicroBudget/draw.h
+ /home/marosm/CLionProjects/MicroBudget/draw_otazky.c
+ /home/marosm/CLionProjects/MicroBudget/draw_otazky.h
  /home/marosm/CLionProjects/MicroBudget/eventHandler.h
  /home/marosm/CLionProjects/MicroBudget/graph.h
  /home/marosm/CLionProjects/MicroBudget/helper.h
@@ -19,6 +32,7 @@ CMakeFiles/MicroBudget.dir/eventHandler.c.o
  /home/marosm/CLionProjects/MicroBudget/linuxSpecific.h
 CMakeFiles/MicroBudget.dir/graph.c.o
  /home/marosm/CLionProjects/MicroBudget/draw.h
+ /home/marosm/CLionProjects/MicroBudget/draw_otazky.h
  /home/marosm/CLionProjects/MicroBudget/eventHandler.h
  /home/marosm/CLionProjects/MicroBudget/graph.c
  /home/marosm/CLionProjects/MicroBudget/graph.h
@@ -37,6 +51,7 @@ CMakeFiles/MicroBudget.dir/linuxSpecific.c.o
  /home/marosm/CLionProjects/MicroBudget/linuxSpecific.h
 CMakeFiles/MicroBudget.dir/main.c.o
  /home/marosm/CLionProjects/MicroBudget/draw.h
+ /home/marosm/CLionProjects/MicroBudget/draw_otazky.h
  /home/marosm/CLionProjects/MicroBudget/eventHandler.h
  /home/marosm/CLionProjects/MicroBudget/graph.h
  /home/marosm/CLionProjects/MicroBudget/helper.h

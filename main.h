@@ -33,6 +33,7 @@
 #include "draw.h"
 #include "stonks.h"
 #include "graph.h"
+#include "draw_otazky.h"
 
 extern struct app
 {
@@ -66,5 +67,8 @@ extern int editMode;
 extern int enteredValue;
 
 extern struct state* stonksState;
+
+extern struct Otazka otazka[10];
+extern int question;
 
 #endif //TETRIS_MAIN_H

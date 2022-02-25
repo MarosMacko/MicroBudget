@@ -88,6 +88,12 @@
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/draw.h">
 			<Option target="MicroBudget"/>
 		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/draw_otazky.c">
+			<Option target="MicroBudget"/>
+		</Unit>
+		<Unit filename="/home/marosm/CLionProjects/MicroBudget/draw_otazky.h">
+			<Option target="MicroBudget"/>
+		</Unit>
 		<Unit filename="/home/marosm/CLionProjects/MicroBudget/eventHandler.c">
 			<Option target="MicroBudget"/>
 		</Unit>

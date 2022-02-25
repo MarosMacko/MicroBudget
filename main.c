@@ -12,7 +12,6 @@ struct state* stonksState;
 int editMode;
 int enteredValue = 0;
 int question = 0;
-
 struct Otazka otazka[10];
 
 int calculateNetWorth()
@@ -29,7 +28,7 @@ int main()
     app.consoleHeight = getConsoleHeight();
     app.consoleWidth  = getConsoleWidth();
     app.targetFPS = 15;
-    app.state = 1;
+    app.state = 2; // otazky
 
     player.freeCash = 1000;
     player.netWorth = 0;
@@ -44,6 +43,9 @@ int main()
 
     //APP INIT
     initTermios(0);
+
+    // INIT otazky
+    otazky();
 
     /// STONKS INIT
     stonksState = initState();
@@ -98,11 +100,12 @@ int main()
             }
             else
             {
+                int ROWS = 5;
+                if (app.state == 2)
+                    ROWS = 3;
                 switch (key)
                 {
-                    int ROWS = 5;
-                    if (app.state == 2)
-                        ROWS = 3;
+
                     case 'w':
                         cursor.y = (cursor.y - 1) % ROWS;
                         if(cursor.y < 0) cursor.y = 4;
@@ -127,7 +130,7 @@ int main()
                             app.state = 3;
                         }
                         else if(app.state == 2){
-                            if (cursor.y == otazky[question].correct)
+                            if (cursor.y == otazka[question].correct)
                                 question++;
                             if (question>3)
                                 app.state = 1;
@@ -147,7 +150,7 @@ int main()
             {
                 /// DRAW
                 if (app.state == 2)
-                    draw_quest();
+                    draw_otazky();
                 /// GRAPH
                 if (app.state == 3)
                     draw_graph();

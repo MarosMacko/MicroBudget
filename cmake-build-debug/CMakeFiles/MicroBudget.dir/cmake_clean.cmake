@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MicroBudget.dir/draw.c.o"
+  "CMakeFiles/MicroBudget.dir/draw_otazky.c.o"
   "CMakeFiles/MicroBudget.dir/eventHandler.c.o"
   "CMakeFiles/MicroBudget.dir/graph.c.o"
   "CMakeFiles/MicroBudget.dir/helper.c.o"

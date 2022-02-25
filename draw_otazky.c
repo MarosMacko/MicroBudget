@@ -137,4 +137,3 @@ void draw_otazky(){
     printf("%i", editMode);
 
 }
-}
