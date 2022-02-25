@@ -1,0 +1,8 @@
+# ninja log v5
+10	405	6674854270507064	CMakeFiles/MicroBudget.dir/linuxSpecific.c.obj	7c1ccbfcc0d6a441
+7	422	6674854270746425	CMakeFiles/MicroBudget.dir/main.cpp.obj	262b80ee3791d5e7
+24	423	6674854270756395	CMakeFiles/MicroBudget.dir/pcg_basic.c.obj	59747f995be6d48d
+0	1198	6674854278575564	CMakeFiles/MicroBudget.dir/draw.c.obj	e9ca019782468f44
+4	1198	6674854278575564	CMakeFiles/MicroBudget.dir/eventHandler.c.obj	b2a232fa5a5c9291
+21	1199	6674854278575564	CMakeFiles/MicroBudget.dir/helper.c.obj	4a56f31e6586b09f
+4	253	6674855016659817	CMakeFiles/MicroBudget.dir/rng.c.obj	e6c892bc2ef7f053

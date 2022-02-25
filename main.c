@@ -80,12 +80,15 @@ int main()
             {
                 switch (key)
                 {
+                    int ROWS = 5;
+                    if (app.state == 2)
+                        ROWS = 3;
                     case 'w':
-                        cursor.y = (cursor.y - 1) % 5;
+                        cursor.y = (cursor.y - 1) % ROWS;
                         if(cursor.y < 0) cursor.y = 4;
                         break;
                     case 's':
-                        cursor.y = (cursor.y + 1) % 5;
+                        cursor.y = (cursor.y + 1) % ROWS;
                         break;
                     case 'a':
                         cursor.x = (cursor.x - 1) % 3;
@@ -102,6 +105,10 @@ int main()
                         else if((app.state == 1) && (cursor.x == 2)) // chcem graf
                         {
                             app.state = 3;
+                        }
+                        else if(app.state == 2){
+                            if (cursor.y == otazky[question].result)
+                                app.state = 1;
                         }
                         else
                         {
