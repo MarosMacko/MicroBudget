@@ -1,13 +1,5 @@
-# Tetris in C
-Pure C Tetris for Linux and Windows (hint: works better in Linux)
-
-| OS      | Enviroment | Support             |
-|---------|------------|---------------------|
-| Linux   | (C)Make    | Full (used for dev) |
-| Linux   | CLion      | Full (used for dev) |
-| Windows | CLion      | Full (used for dev) |
-| Windows | CodeBlocks | Partial (tested)    |
-| Windows | (C)Make    | Should work         |
+# BSEC competition entry
+Pure C Trading app for Linux 
 
 ## Build instructions :hammer:
 
@@ -29,13 +21,6 @@ make
 ./Tetris
 ```
 
-## Codeblocks
-
-* Clone or download the repository (.zip file and unextract)
-* Open .cbp file
-* Select `Release` target
-* Cross your fingers and hit Build (and run)
-
 #### Goals of this project
 
-There are few things that could be done better. Faster. Maybe more interesting, effective, or make more sense. But decisions which are made were for my own academic purposes. Some things are overkill. I didn't want to use any external library for GUI, or similiar tasks. If you have any suggestions, PRs are welcome. 
+None. We won somehow with this shit, lol.
